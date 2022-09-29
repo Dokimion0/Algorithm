@@ -1,0 +1,10 @@
+var input = require("fs").readFileSync("/dev/stdin").toString().split("\n");
+var A = parseInt(input[0]);
+var B = parseInt(input[1]);
+var C = parseInt((B % 100) % 10) * A;
+var D = parseInt((B % 100) / 10) * A;
+var E = parseInt(B / 100) * A;
+console.log(C);
+console.log(D);
+console.log(E);
+console.log(A * B);
