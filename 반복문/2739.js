@@ -1,11 +1,9 @@
-var input = require("fs").readFileSync("dev/stdin").toString().split("\n");
+var input = require("fs").readFileSync("example.txt").toString().split(" ");
 
-var repeat = parseInt(input[0]);
-var i = 1;
+var num = parseInt(input[0]);
+var count = 1;
 
-while (i <= repeat) {
-  console.log(
-    parseInt(input[i].split(" ")[0]) + parseInt(input[i].split(" ")[1])
-  );
-  i++;
+while (count < 10) {
+  console.log(`2 * ${count} = ${2 * count}`);
+  count++;
 }
